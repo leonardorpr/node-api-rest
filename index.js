@@ -10,4 +10,6 @@ requireDir(dbConfig.modelsPath);
 
 app.use(bodyParser.json());
 
+app.use('/api', require('./app/routes'));
+
 app.listen(3000);
