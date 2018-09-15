@@ -15,7 +15,7 @@ module.exports = async (req, res, next) => {
     return res.status(401).json({ error: 'Token error' });
   }
 
-  const [ scheme, token ] = parts;
+  const [scheme, token] = parts;
 
   if (scheme !== 'Bearer') {
     return res.status(401).json({ error: 'Token malformatted' });
