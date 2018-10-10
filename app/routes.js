@@ -24,4 +24,8 @@ routes.post('/like/:id', controllers.likeController.toggle);
 // Users
 routes.put('/users', controllers.userController.update);
 
+// Follows
+routes.post('/follow/:id', controllers.followController.create);
+routes.delete('/unfollow/:id', controllers.followController.destroy);
+
 module.exports = routes;
