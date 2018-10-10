@@ -23,6 +23,7 @@ routes.post('/like/:id', controllers.likeController.toggle);
 
 // Users
 routes.get('/me', controllers.userController.me);
+routes.get('/feed', controllers.userController.feed);
 routes.put('/users', controllers.userController.update);
 
 // Follows
